@@ -1,5 +1,4 @@
 import { Boot } from "./boot";
-import { TypeContainer } from './types';
 
 export class ServiceProvider {
 
@@ -13,5 +12,3 @@ export class ServiceProvider {
 
     }
 }
-
-export { TypeContainer };
