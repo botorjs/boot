@@ -1,0 +1,13 @@
+index.ts
+src/
+node_modules
+npm-debug.log
+.travis.yml
+.gitignore
+tsconfig.json
+tests
+coverage
+.nyc_output
+example
+.DS_Store
+.idea
