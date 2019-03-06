@@ -1,5 +1,5 @@
 {
-  "name": "botorjs-boot",
+  "name": "@botorjs/boot",
   "version": "1.0.0",
   "description": "Boot of framework Botorjs",
   "main": "src/index.ts",

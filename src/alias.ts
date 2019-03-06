@@ -1,18 +1,18 @@
 
 export class Alias {
-    _aliases: Object;
+//    private _aliases: Object;
 
-    public add(name: string|Function, alias: any) {
+    // public add(name: string|Function, alias: any) {
 
-    }
+    // }
 
-    public get(name: string|Function): any {
+    // public get(name: string|Function): any {
         
-    }
+    // }
 
-    public has(name: string|Function): boolean {
+    // public has(name: string|Function): boolean {
 
-        return false;
-    }
+    //     return false;
+    // }
 
 }

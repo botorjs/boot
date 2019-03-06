@@ -1,9 +1,17 @@
 import { Boot } from "./boot";
 import { TypeContainer } from './types';
 
-export interface ServiceProvider {
-    register(app: Boot);
-    boot(app: Boot);
+export class ServiceProvider {
+
+    // @ts-ignore
+    register(app: Boot) {
+
+    }
+
+    // @ts-ignore
+    boot(app: Boot) {
+
+    }
 }
 
 export { TypeContainer };

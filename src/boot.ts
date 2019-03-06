@@ -17,6 +17,7 @@ export class Boot {
         this._alias = new Alias();
         this._ioc = new IoC();
         this._ioc_fake = new IoC();
+        this._loader = new Loader(this);
     }
     
     public get alias(): Alias{
@@ -38,8 +39,11 @@ export class Boot {
         return this._loader;
     }
 
-    public get<T>(name: string|Function = null) {
-
+    public get<T>(name: string|Function = null): T {
+        if(this.fake.has(name)) {
+            return this.get<T>(name);
+        }
+        return this.ioc.get<T>(name);
     }
 
     public preload() {
