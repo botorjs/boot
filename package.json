@@ -4,7 +4,8 @@
   "description": "Boot of framework Botorjs",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register tests/**/*.test.ts && nyc report"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,18 @@
   },
   "homepage": "https://github.com/botorjs/boot#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/debug": "^4.1.2",
+    "@types/mocha": "^5.2.6",
     "@types/node": "^11.10.4",
-    "debug": "^4.1.1"
+    "chai": "^4.2.0",
+    "debug": "^4.1.1",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
   }
 }

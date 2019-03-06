@@ -1,8 +1,9 @@
+import { TypeContainer, TypeIoC } from "./types";
 
 export class Container {
     public name: string;
-    type_of: Function;
+    type_target: TypeContainer;
     obj: any;
     target: any;
-    type: string;
+    type: TypeIoC;
 }

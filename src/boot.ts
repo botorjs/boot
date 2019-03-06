@@ -4,19 +4,19 @@ import { IoC } from './Ioc';
 import { Loader } from './loader';
 import { Alias } from './alias';
 
-var __IoC: IoC = null;
-var __IoC_fake: IoC = null;
 
 export class Boot {
     private _hook: Hook;
     private _ioc: IoC;
     private _ioc_fake: IoC;
     private _loader: Loader;
-    private _root: string;
     private _alias: Alias;
 
-    public get root(): string {
-        return this._root;
+    constructor() {
+        this._hook = new Hook();
+        this._alias = new Alias();
+        this._ioc = new IoC();
+        this._ioc_fake = new IoC();
     }
     
     public get alias(): Alias{
