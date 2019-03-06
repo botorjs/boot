@@ -93,7 +93,7 @@ export class Loader {
         this._register();
         this._app.hook.emit("loader:boot");
         this._boot();
-        this._app.hook.emit("loader:end_preload");
+        this._app.hook.emit("loader:preload:end");
         this._state = StateLoader.Perload;
     }
 
