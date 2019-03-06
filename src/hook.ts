@@ -1,10 +1,8 @@
-
-import EventEmitter from 'events';
-import { on } from 'cluster';
+import { EventEmitter } from "events";
 
 
 export class Hook {
-    _event_bus: EventEmitter
+    private _event_bus: EventEmitter
 
     constructor() {
         this._event_bus = new EventEmitter();

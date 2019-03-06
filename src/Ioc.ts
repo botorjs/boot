@@ -196,7 +196,7 @@ export class IoC {
                 return;
             }
         })
-        debug("target function is container", container.name);
+        debug("target function is container", container);
         return container;
     }
 
