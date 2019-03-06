@@ -11,15 +11,6 @@ export interface InjectableClass {
 
 export class Reflector {
 
-    public static getMeta(target: InjectableClass) : MetaDataClass{
-        if (!target.__class_meta__) {
-          target.__class_meta__ = {
-            inject: false,
-          };
-        }
-        return target.__class_meta__;
-      }
-  
     /**
      * Get injectable's param types
      *
