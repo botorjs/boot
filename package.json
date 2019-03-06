@@ -1,0 +1,30 @@
+{
+  "name": "botorjs-boot",
+  "version": "1.0.0",
+  "description": "Boot of framework Botorjs",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/botorjs/boot.git"
+  },
+  "keywords": [
+    "botor",
+    "framework",
+    "typesript",
+    "node",
+    "js"
+  ],
+  "author": "norton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/botorjs/boot/issues"
+  },
+  "homepage": "https://github.com/botorjs/boot#readme",
+  "devDependencies": {
+    "@types/node": "^11.10.4",
+    "debug": "^4.1.1"
+  }
+}
