@@ -1,4 +1,6 @@
 # Boot
+[![Build Status](https://travis-ci.org/botorjs/boot.svg?branch=master)](https://travis-ci.org/botorjs/boot)
+[![Coverage Status](https://coveralls.io/repos/github/botorjs/boot/badge.svg?branch=master)](https://coveralls.io/github/botorjs/boot?branch=master)
 
 ### Library that core of Botorjs include IoC, Loader and Alias
 
