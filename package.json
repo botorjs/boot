@@ -1,9 +1,11 @@
 {
   "name": "@botorjs/boot",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Boot of framework Botorjs",
-  "main": "src/index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "mocha -r ts-node/register tests/**/*.test.ts",
     "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register tests/**/*.test.ts && nyc report"
   },
